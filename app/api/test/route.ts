@@ -7,4 +7,4 @@ export const GET = async (req: Request) => {
 
   console.log('hello')
   return NextResponse.json(result);
-}
+};
