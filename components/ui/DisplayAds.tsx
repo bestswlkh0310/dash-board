@@ -1,32 +1,16 @@
 import React, { useEffect } from 'react'
 
+declare global {
+  interface Window {
+    adsbygoogle: any;
+  }
+}
 
 export default function DisplayAds () {
   useEffect(() => {
-    const pushAd = () => {
-      try {
-        // @ts-ignore
-        window.adsbygoogle.push({})
-      } catch (e) {
-        console.error(e);
-      }
-    }
-
-    let interval = setInterval(() => {
-      // @ts-ignore
-      console.log(window.adsbygoogle);
-      // @ts-ignore
-      if (window.adsbygoogle) {
-        // @ts-ignore
-        console.log(window.adsbygoogle);
-        pushAd();
-      }
-    }, 300);
-
-    return () => {
-      clearInterval(interval);
-    }
+    (window.adsbygoogle = window.adsbygoogle || []).push({})
   }, []);
+
   return (
     <>
   <ins className="adsbygoogle"
