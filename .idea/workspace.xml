@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef37fb16-c200-4aae-a51c-e8c737c2f2f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/provider/modal-provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/provider/theme-provider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/action-tooltip.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/navigation/navigation-action.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/navigation/navigation-item.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/navigation/navigation-sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/server/server-header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/server/server-sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/use-modal-store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(features)/(routes)/link/page.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(features)/(routes)/link/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(features)/(routes)/link/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(features)/(routes)/link/page.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -43,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/dgsw8th71/Desktop/develop/dash-board/components",
+    "last_opened_file_path": "/Users/dgsw8th71/Desktop/develop/dash-board/components/ui",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,7 +58,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/ui" />
       <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/ui" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -66,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699703446276</updated>
-      <workItem from="1699703447683" duration="1596000" />
+      <workItem from="1699703447683" duration="3520000" />
     </task>
     <servers />
   </component>
