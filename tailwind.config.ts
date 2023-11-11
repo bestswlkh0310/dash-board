@@ -10,6 +10,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        gray1: "var(--gray1-color)",
+        gray2: "var(--gray2-color)",
+        gray3: "var(--gray3-color)",
+        gray4: "var(--gray4-color)",
+        white1: "var(--white1-color",
+        white2: "var(--white2-color",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
