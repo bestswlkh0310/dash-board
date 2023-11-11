@@ -1,5 +1,3 @@
-"use client"
-
 import Image from 'next/image'
 import styles from './page.module.css'
 import {ThemeProvider} from "next-themes";
@@ -8,15 +6,9 @@ import {Button} from "@/components/ui/button";
 
 export default function Page() {
   return (
-      <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-      >
-        <main className={styles.main}>
-          <ModeToggle/>
-        </main>
-      </ThemeProvider>
+    <main className={"flex flex-col justify-between items-center p-24 min-h-screen"}>
+
+      <ModeToggle/>
+    </main>
   )
 }
