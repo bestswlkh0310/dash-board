@@ -23,8 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(
+
         inter.className,
-        "bg-white dark:bg-[#313338]"
+        "bg-white dark:[var(main1-color)]"
         )}>
         <ThemeProvider
           attribute="class"
