@@ -6,6 +6,7 @@ import 'tailwindcss/tailwind.css'
 import {ThemeProvider} from "@/components/provider/theme-provider";
 import {ServerSidebar} from "@/components/server/server-sidebar";
 import {NavigationSidebar} from "@/components/navigation/navigation-sidebar";
+import {cn} from "@/lib/utils";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cn(
+        inter.className,
+        "bg-white dark:bg-[#313338]"
+        )}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -30,7 +34,7 @@ export default function RootLayout({
         >
           <div className='h-full'>
             <div className="hidden md:flex h-full w-[72px] z-30 flex-col fixed inset-y-0">
-            <NavigationSidebar/>
+              <NavigationSidebar/>
             </div>
             <main className="md:pl-[72px] h-full">
               <div className='hidden md:flex w-60 z-20 flex-col fixed inset-y-0'>
