@@ -14,7 +14,7 @@ export default function Channel({
 
   return (
     <div className={"md:pl-60"}>
-      <div className={"flex pl-4 items-center w-full h-12 bg-gray3 fixed z-10"}>{channel?.name}</div>
+      <div className={"flex pl-4 items-center w-full h-12 shadow-sm bg-white1 dark:bg-gray3 fixed z-10"}>{channel?.name}</div>
       {children}
     </div>
   )
