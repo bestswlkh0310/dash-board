@@ -33,7 +33,7 @@ export default function Channel({
   }, []);
 
   return (
-    <div className={"flex"}>
+    <div className={"flex pt-12"}>
       <div className={"m-2"}>
         <li>
           {newsList.map(i => (
