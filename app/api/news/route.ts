@@ -1,16 +1,10 @@
 import {NextResponse} from "next/server";
 import axios from 'axios';
 import cheerio from 'cheerio';
-
-export interface News {
-  id: number
-  title: string
-  description: string
-  url: string
-}
+import {ItNews} from "@/type/ItNews";
 
 export const GET = async (request: Request, response: Response) => {
-  const result: News[] = [];
+  const result: ItNews[] = [];
 
   for (let i = 1; i <= 50; i++) {
     try {
@@ -26,12 +20,14 @@ export const GET = async (request: Request, response: Response) => {
         const title = $(element).find('.topictitle').eq(0).text();
         const description = $(element).find('.topicdesc').eq(0).find('a').eq(0).text();
         const url = $(element).find('a').eq(1).attr('href');
+        const createdAt = $(element).find('.topicinfo').eq(0).text().split(" ")[4];
 
         result.push({
           id: i,
           title: title,
           description: description,
-          url: url!
+          url: url!,
+          createdAt: createdAt
         });
       });
     } catch (error) {

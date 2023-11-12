@@ -7,8 +7,9 @@ import {ThemeProvider} from "@/components/provider/theme-provider";
 import {ServerSidebar} from "@/components/server/server-sidebar";
 import {NavigationSidebar} from "@/components/navigation/navigation-sidebar";
 import {cn} from "@/lib/utils";
-
+import {dummyItems} from "@/constant/constant";
 const inter = Inter({ subsets: ['latin'] })
+
 
 export const metadata: Metadata = {
   title: 'Create Next Page',
@@ -25,7 +26,7 @@ export default function RootLayout({
       <body className={cn(
 
         inter.className,
-        "bg-white dark:bg-gray1"
+        "bg-white dark:bg-gray2"
         )}>
         <ThemeProvider
           attribute="class"
@@ -35,7 +36,7 @@ export default function RootLayout({
         >
           <div className='h-full'>
             <div className="hidden md:flex h-full w-[72px] z-30 flex-col fixed inset-y-0">
-              <NavigationSidebar/>
+              <NavigationSidebar navItems={dummyItems}/>
             </div>
             <main className="md:pl-[72px] h-full">
               <div className='hidden md:flex w-60 z-20 flex-col fixed inset-y-0'>

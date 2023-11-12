@@ -3,22 +3,22 @@
 import {Card} from "@/components/ui/card";
 import {useEffect, useState} from "react";
 import axios from "axios";
-import {News} from "@/app/api/news/route";
 import DisplayAds from "@/components/ui/DisplayAds";
+import {ItNews} from "@/type/ItNews";
 
-interface Params {
-  channelId: string
+export interface ChannelParams {
+  channelId: number
 }
 
 export default function Channel({
   params
 }: {
-  params: Params
+  params: ChannelParams
 }) {
 
-  const [newsList, setNewsList] = useState<News[]>([]);
+  const [newsList, setNewsList] = useState<ItNews[]>([]);
 
-  const handleNews = (category: string) => {
+  const handleNews = (category: number) => {
 
   };
 
@@ -39,10 +39,10 @@ export default function Channel({
           {newsList.map(i => (
             <ul key={i.title} className={"mb-2"}>
               <DisplayAds/>
-              <Card className={"h-40 flex flex-col p-2"}>
-                <div>{i.title}</div>
-                <div>{i.description}</div>
-                <div>{i.url}</div>
+              <Card className={"flex flex-col p-2"}>
+                <a href={i.url} target={"_blank"} className={"text-xl font-normal"}>{i.title}</a>
+                <div className={"font-light text-gray-300"}>{i.description}</div>
+                <div className={"text-sm text-gray-500"}>{i.createdAt}</div>
               </Card>
             </ul>
           ))}

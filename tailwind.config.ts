@@ -14,6 +14,7 @@ const config: Config = {
         gray2: "var(--gray2-color)",
         gray3: "var(--gray3-color)",
         gray4: "var(--gray4-color)",
+        gray5: "var(--gray5-color)",
         white1: "var(--white1-color)",
         white2: "var(--white2-color)",
 
