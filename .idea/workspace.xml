@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef37fb16-c200-4aae-a51c-e8c737c2f2f7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/channel/[channelId]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/channel/[channelId]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/channel/[channelId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/channel/[channelId]/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699703446276</updated>
       <workItem from="1699703447683" duration="16632000" />
-      <workItem from="1699721074099" duration="5044000" />
+      <workItem from="1699721074099" duration="5151000" />
     </task>
     <servers />
   </component>

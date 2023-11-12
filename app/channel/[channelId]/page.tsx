@@ -41,8 +41,8 @@ export default function Channel({
               <DisplayAds/>
               <Card className={"flex flex-col p-2"}>
                 <a href={i.url} target={"_blank"} className={"text-xl font-normal"}>{i.title}</a>
-                <div className={"font-light text-gray-300"}>{i.description}</div>
-                <div className={"text-sm text-gray-500"}>{i.createdAt}</div>
+                <div className={"font-light text-gray-600 dark:text-gray-300"}>{i.description}</div>
+                <div className={"text-sm text-gray-400 dark:text-gray-500"}>{i.createdAt}</div>
               </Card>
             </ul>
           ))}
